@@ -137,3 +137,70 @@ p {
     color: #ffffff;
     margin-bottom: 30px;
 }
+
+.informacoes {
+    /* Organiza os cartões lado a lado */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+     /* define o espaço entre os cartões */
+     gap: 20px;
+}
+
+.info-card {
+    /* define o fundo e as bordas dos cartões */
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    /*arredonda os cantos*/
+    border-radius: 18px;
+
+    /*define o espaçamento interno*/
+    padding: 30px;
+
+    text-align: left;
+
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    /*eleva o cartão quando o mouse passa o mouse sobre ele*/
+    transform: translateY(-5px);
+    border-color: #dc2626;
+}
+
+.info-card h3 {
+    /*estiliza os título git e github*/
+    color:#f87171;
+    font-size:1.4;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    /*Ajusta o espaçamento entre os parágrafos*/
+    margin-bottom: 12px;
+}
+
+.info-card p:last-child {
+    /*remove o espaço abaixo do último parágrafo*/
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .informacoes {
+        /*organiza os cartões um abaixo do outro quando a tela for pequena*/
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .conteudo h2 {
+        /*diminui o tamanho do título no celular*/
+        font-size: 1.6rem;
+    }
+
+
+    .info-card {
+        padding: 22px;
+    }
+}
