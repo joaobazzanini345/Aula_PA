@@ -67,5 +67,38 @@
 
     </section>
 
+    <!--PART 3: NOVAS FUNCIONALIDADES-->
+
+        <!--NOVO: links internos levam o visitante até cada seção pelo seu id-->
+        <nav class="menu-estudo" aria-label="Navegação dos estudos">
+            <a href="#comandos">Consultar comandos</a>
+            <a href="#atividade"> Minha aividade</a>
+            <a href="#materiais"> Materiais de apoio</a>
+        </nav>
+
+        <section class="conteudo estudo" id="comandos">
+            <h2>Comandos para praticar</h2>
+            <p>Clique em um comando para abrir sua explicação. No teclado,
+                use Tab e Enter.
+            </p>
+        </section>
+
+        <!--NOVO: details abre e fecha sem JavaScript; summary é o titulo clicável.-->
+        <details>
+            <summary>1. git init - iniciar um repositorio</summary>
+            <p>Execute na pasta do projeto para começar a controlar suas versões.</p>
+            <!--A tag code indentifica um trecho de código ou um comando-->
+            <code> git init</code>
+        </details>
+
+        <details>
+            <summary>2. git status - conferir as alterações</summary>
+            <p>Mostra quais arquivos foram modificados e quais estão preparados
+                para o próximo commit.
+            </p>
+            <code>git status</code>
+        </details>
+
+        
 </body>
 </html>
